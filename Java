@@ -1,0 +1,22 @@
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const items = ['Confirm official PCS orders', 'Book travel arrangements', 'Schedule HHG shipment'];
+
+    items.forEach(item => {
+        addItem(item);
+    });
+});
+
+function addItem(text = '') {
+    const list = document.getElementById('checklist');
+
+    const li = document.createElement('li');
+    li.textContent = text || prompt('Enter new checklist item:');
+    li.addEventListener('click', () => {
+        li.classList.toggle('checked');
+    });
+
+    if (li.textContent) {
+        list.appendChild(li);
+    }
+}
