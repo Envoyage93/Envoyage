@@ -1,0 +1,22 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#checklistContainer {
+    max-width: 600px;
+    margin: auto;
+}
+
+#checklist li {
+    list-style-type: none;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+#checklist li.checked {
+    text-decoration: line-through;
+    background-color: #d6ffd6;
+}
